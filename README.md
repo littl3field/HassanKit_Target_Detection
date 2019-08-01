@@ -9,7 +9,7 @@ $ git clone https://github.com/littl3field/O365PhishingCampaignValidation.git
 ```
 ```sh
 $ cd O365PhishingCampaignValidation
-$ pip install -r requirements.txt
+$ sudo pip install -r requirements.txt
 ```
 
 Use a text editor to add your query in QUERY variable (I'll add a argparse soon)
