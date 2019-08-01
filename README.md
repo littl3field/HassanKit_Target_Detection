@@ -1,13 +1,23 @@
 # Targeted "XeroxProfessionals" Office365 Attack User Validation 
 This script automates the checking of users contained within the "XeroxProfessionals" targeted attack dumps.
 
-To use: 
+*I recommend running in a sandbox/off network environement*
 
-Enter your query, i.e "littl3field" as the QUERY variable & run.
+### To use: 
+```sh
+$ git clone https://github.com/littl3field/O365PhishingCampaignValidation.git
+```
+```sh
+$ cd O365PhishingCampaignValidation
+$ pip install -r requirements.txt
+```
 
-This will pull all the data into result.txt & run your query against it. 
-Any matches will be output to matches.txt
+Use a text editor to add your query in QUERY variable (I'll add a argparse soon)
+[QUERY = "company"]
 
-This is a quick script to automate the task. 
+### Output: 
+result.txt = full list of data collected from the server
+matches.txt = all users matched within the dataset
 
-
+This is a quick bodge script to automate the task right now. I'll improve it if the attack continues.
+I will add argparse soon to make querying easier, it's late AToW.
