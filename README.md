@@ -13,7 +13,7 @@ $ pip install -r requirements.txt
 ```
 
 Use a text editor to add your query in QUERY variable (I'll add a argparse soon)
-[QUERY = "company"]
+[QUERY = "company"] <- Change this
 
 ### Output: 
 result.txt = full list of data collected from the server
