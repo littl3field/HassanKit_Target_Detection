@@ -5,7 +5,7 @@ import math
 import argparse
 
 parser = argparse.ArgumentParser(
-    description="Office 365 'Xerox' Campaign Validation Script @littl3field"
+    description="Office 365 Campaign Validation Script @littl3field"
 )
 
 parser.add_argument('QUERY', help="Query a user or domain")
