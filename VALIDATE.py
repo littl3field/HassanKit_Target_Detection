@@ -34,12 +34,12 @@ def check(query_arg):
     with open('result.txt', 'r') as searchfile:
         for load in tqdm(range(0, 100), desc="[INFO] Querying Data:", ascii=True):
             sleep(.01)
-            o = open('matches.txt', 'w')
+            o = open('matches.txt', 'a')
             for line in searchfile:
                 if query_arg.lower() in line.lower():
                     output_str = "Targeted User Found: " + line
-                    o.write(output_str)
-                    print(output_str)
+                    o.write("Targeted  User Found: " + line)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
