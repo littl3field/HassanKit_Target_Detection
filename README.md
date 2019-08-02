@@ -15,6 +15,10 @@ $ sudo pip install -r requirements.txt
 Use a text editor to add your query in QUERY variable (I'll add a argparse soon)
 [QUERY = "company"] <- Change this
 
+```sh
+$ python VALIDATE.py
+```
+
 ### Output: 
 result.txt = full list of data collected from the server
 matches.txt = all users matched within the dataset
