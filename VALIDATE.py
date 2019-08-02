@@ -1,10 +1,15 @@
-#!/usr/bin/python
 from tqdm import tqdm
 from time import sleep
 import requests
+import math
+import argparse
 
-#Enter query here (this is case sensitive)
-QUERY = "company"
+parser = argparse.ArgumentParser(
+    description="Office 365 'Xerox' Campaign Validation Script @littl3field"
+)
+
+parser.add_argument('QUERY', help="Query a user or domain")
+args = parser.parse_args()
 
 def textRequest():
     result = []
@@ -14,7 +19,7 @@ def textRequest():
         for url in urls:
             req = requests.get(url)
             if req.status_code != 200:
-                print('[Error] URL is dead:' + url)
+                print('[Error] URL is dead:')
                 continue
             result.append(req.content.decode())
 
@@ -25,15 +30,23 @@ def textRequest():
                 w.write(res)
 
 #Check if string is contained in userlist
-def check():
-        with open('result.txt', 'r') as searchfile:
-            for load in tqdm(range(0, 100), desc="[INFO] Querying Data:", ascii=True):
-                sleep(.01)
-                for line in searchfile:
-                    if QUERY in line:
-                        o = open('matches.txt', 'w')
-                        print("Targeted User Found: " + line, file=o)
+def check(query_arg):
+    with open('result.txt', 'r') as searchfile:
+        for load in tqdm(range(0, 100), desc="[INFO] Querying Data:", ascii=True):
+            sleep(.01)
+            o = open('matches.txt', 'w')
+            for line in searchfile:
+                if query_arg.lower() in line.lower():
+                    output_str = "Targeted User Found: " + line
+                    o.write(output_str)
+                    print(output_str)
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description="Office 365 'Xerox' Campaign Validation Script"
+    )
+
+    parser.add_argument('QUERY', help="Query a user or domain")
+    args = parser.parse_args()
     textRequest()
-    check()
+    check(args.QUERY)
