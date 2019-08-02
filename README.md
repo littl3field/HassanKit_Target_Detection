@@ -11,12 +11,9 @@ $ git clone https://github.com/littl3field/O365PhishingCampaignValidation.git
 $ cd O365PhishingCampaignValidation
 $ sudo pip install -r requirements.txt
 ```
-
-Use a text editor to add your query in QUERY variable (I'll add a argparse soon)
-[QUERY = "company"] <- Change this
-
+Run you query like this to check if your organisation or search term is within the dataset. Example below uses "companyname" as the arguement. At this moment, it is case sensitive, so please use lower case. 
 ```sh
-$ python VALIDATE.py
+$ python VALIDATE.py companyname
 ```
 
 ### Output: 
