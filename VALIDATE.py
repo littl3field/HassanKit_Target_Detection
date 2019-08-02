@@ -10,11 +10,11 @@ def textRequest():
     result = []
     with open('urls.txt', 'r') as r:
         urls = r.read()
-        for url in urls.split('\n'):
+        urls = filter(None, urls.split("\n"))
+        for url in urls:
             req = requests.get(url)
             if req.status_code != 200:
                 print('[Error] URL is dead:' + url)
-            else:
                 continue
             result.append(req.content.decode())
 
