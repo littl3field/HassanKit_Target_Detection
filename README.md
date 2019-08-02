@@ -1,6 +1,5 @@
 # Targeted Office365 Attack User Validation 
-### UPDATE: Add all directory path URLs containing http://url.com/filename.txt to urls.txt
-### UPDATE:I have since removed this opendir for obfuscation & TLP reasons*
+### UPDATE: I have since removed this opendir for obfuscation & TLP reasons, those with access to the list... Add all directory path URLs containing http://url.com/filename.txt to urls.txt
 
 This script automates the checking of users contained within the targeted attack dumps.
 
