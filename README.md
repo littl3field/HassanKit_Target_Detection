@@ -1,5 +1,8 @@
-# Targeted "XeroxProfessionals" Office365 Attack User Validation 
-This script automates the checking of users contained within the "XeroxProfessionals" targeted attack dumps.
+# Targeted Office365 Attack User Validation 
+Add all directory path URLs containing http://url.com/filename.txt
+*I have since removed this opendir for obfuscation & TLP reasons*
+
+This script automates the checking of users contained within the targeted attack dumps.
 
 *I recommend running in a sandbox/off network environement*
 
