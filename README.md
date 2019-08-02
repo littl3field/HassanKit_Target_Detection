@@ -20,6 +20,5 @@ $ python VALIDATE.py companyname
 - result.txt = full list of data collected from the server
 - matches.txt = all users matched within the dataset
 
+Note: If not all data is grabbed it might be a bandwidth issue. I'll improve the effiency soon.
 This is a quick bodge script to automate the task right now. I'll improve it if the attack continues.
-
-Note: Script might not grab all files, it depends on your bandwith. I'll improve this soon.
