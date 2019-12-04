@@ -7,7 +7,7 @@ This script automates the checking of users contained within the targeted attack
 
 ### To use: 
 ```sh
-$ git clone https://github.com/littl3field/O365PhishingCampaignValidation.git
+$ git clone https://github.com/littl3field/HassanKit_Target_Detection
 ```
 ```sh
 $ cd O365PhishingCampaignValidation
