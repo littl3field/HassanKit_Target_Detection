@@ -10,7 +10,7 @@ This script automates the checking of users contained within the targeted attack
 $ git clone https://github.com/littl3field/HassanKit_Target_Detection
 ```
 ```sh
-$ cd O365PhishingCampaignValidation
+$ cd HassanKit_Target_Detection
 $ sudo pip install -r requirements.txt
 ```
 Run you query like this to check if your organisation or search term is within the dataset. Example below uses "companyname" as the arguement. At this moment, it is case sensitive, so please use lower case. 
