@@ -1,4 +1,4 @@
-# Targeted Office365 Attack User Validation 
+# Targeted #HassanKit Attack User Validation 
 ### UPDATE: I have since removed this opendir for obfuscation & TLP reasons, those with access to the list... Add all directory path URLs containing to urls.txt line by line like shown in the file.
 
 This script automates the checking of users contained within the targeted attack dumps.
